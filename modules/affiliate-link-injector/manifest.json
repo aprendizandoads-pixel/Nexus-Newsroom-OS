@@ -1,0 +1,16 @@
+{
+  "name": "affiliate-link-injector",
+  "version": "1.5.0",
+  "description": "Automatically injects affiliate tracking links into product mentions.",
+  "type": "declarative",
+  "permissions": ["read:drafts", "write:content"],
+  "compatibility": { "core": ">=1.0.0" },
+  "configSchema": {
+      "type": "object",
+      "properties": {
+          "amazonAssociateId": { "type": "string", "description": "Amazon Associate Tag" },
+          "disclaimerText": { "type": "string", "default": "This post contains affiliate links." },
+          "autoLink": { "type": "boolean", "default": true, "description": "Automatically link known keywords" }
+      }
+  }
+}

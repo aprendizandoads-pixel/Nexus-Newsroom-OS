@@ -1,0 +1,16 @@
+{
+  "name": "newsletter-automator",
+  "version": "1.0.0",
+  "description": "Compiles daily/weekly published content into a digest for email marketing.",
+  "type": "worker-only",
+  "permissions": ["read:articles", "network:outbound"],
+  "compatibility": { "core": ">=1.1.0" },
+  "configSchema": {
+      "type": "object",
+      "properties": {
+          "mailchimpApiKey": { "type": "string", "format": "password", "description": "Mailchimp API Key" },
+          "frequency": { "type": "string", "enum": ["Daily", "Weekly"], "default": "Weekly" },
+          "subjectLineTemplate": { "type": "string", "default": "Nexus Tech Digest: {date}" }
+      }
+  }
+}

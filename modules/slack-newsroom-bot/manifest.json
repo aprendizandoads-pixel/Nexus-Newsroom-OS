@@ -1,0 +1,16 @@
+{
+  "name": "slack-newsroom-bot",
+  "version": "1.0.0",
+  "description": "Real-time alerts for viral signals (Score > 80) and breaking news.",
+  "type": "worker-only",
+  "permissions": ["read:signals", "network:outbound"],
+  "compatibility": { "core": ">=0.1.0" },
+  "configSchema": {
+      "type": "object",
+      "properties": {
+          "webhookUrl": { "type": "string", "format": "url", "description": "Slack Incoming Webhook URL" },
+          "alertThreshold": { "type": "string", "default": "80", "description": "Min signal score to trigger alert" },
+          "channelName": { "type": "string", "default": "#breaking", "description": "Target Channel" }
+      }
+  }
+}

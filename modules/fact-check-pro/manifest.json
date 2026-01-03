@@ -1,0 +1,15 @@
+{
+  "name": "fact-check-pro",
+  "version": "0.9.beta",
+  "description": "AI Agent that cross-references draft claims with arXiv and Google Scholar.",
+  "type": "declarative",
+  "permissions": ["read:drafts", "network:outbound", "write:metadata"],
+  "compatibility": { "core": ">=0.5.0" },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "strictMode": { "type": "boolean", "default": false, "description": "Block publishing if claims fail check" },
+      "trustedSources": { "type": "string", "default": "arxiv.org, nature.com, reuters.com", "description": "Comma separated allowed domains" }
+    }
+  }
+}

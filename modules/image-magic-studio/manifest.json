@@ -1,0 +1,16 @@
+{
+  "name": "image-magic-studio",
+  "version": "2.1.0",
+  "description": "Generates SEO-optimized featured images and infographics using Midjourney/DALL-E.",
+  "type": "full",
+  "permissions": ["read:drafts", "write:media", "network:outbound"],
+  "compatibility": { "core": ">=1.0.0" },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "provider": { "type": "string", "enum": ["Midjourney", "DALL-E 3"], "default": "DALL-E 3" },
+      "stylePreset": { "type": "string", "enum": ["Photorealistic", "Vector Art", "Cyberpunk", "Minimalist"], "default": "Photorealistic" },
+      "aspectRatio": { "type": "string", "enum": ["16:9", "1:1", "4:3"], "default": "16:9" }
+    }
+  }
+}

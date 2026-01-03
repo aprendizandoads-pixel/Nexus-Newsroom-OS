@@ -1,0 +1,18 @@
+{
+  "name": "social-syndicator-x",
+  "version": "1.2.0",
+  "description": "Auto-generates threads for X and posts to LinkedIn upon publication.",
+  "type": "worker-only",
+  "permissions": ["network:outbound", "read:articles"],
+  "compatibility": { "core": ">=1.0.0" },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "twitterApiKey": { "type": "string", "format": "password", "description": "X API Key" },
+      "linkedinClientId": { "type": "string", "format": "password", "description": "LinkedIn Client ID" },
+      "autoPost": { "type": "boolean", "default": true, "description": "Post immediately after publishing" },
+      "hashtagCount": { "type": "string", "default": "3", "description": "Max hashtags to append" }
+    },
+    "required": ["twitterApiKey"]
+  }
+}

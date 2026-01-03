@@ -1,0 +1,5 @@
+{
+  "name": "Nexus Newsroom OS",
+  "description": "Autonomous newsroom platform for signal detection, content generation, and publishing orchestration.",
+  "requestFramePermissions": []
+}

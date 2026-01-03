@@ -1,0 +1,22 @@
+{
+  "name": "wordpress-core-integrator",
+  "version": "3.0.0",
+  "description": "Advanced WP connection with Deep Analysis, DB Optimization, and Public Folder Scanning.",
+  "type": "worker-only",
+  "permissions": ["read:fs", "read:db", "write:report", "network:outbound"],
+  "compatibility": { "core": ">=0.1.0" },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "wpUrl": { "type": "string", "description": "WordPress Site URL", "default": "" },
+      "username": { "type": "string", "description": "Admin Username", "default": "" },
+      "appPassword": { "type": "string", "description": "Application Password", "format": "password" },
+      "analysisMode": { "type": "string", "description": "Scan Depth", "enum": ["Surface", "Deep (Slow)", "Real-time"], "default": "Deep (Slow)" },
+      "scanInterval": { "type": "string", "description": "Interval (Minutes)", "default": "60" },
+      "autoFix": { "type": "boolean", "description": "Auto-apply critical fixes", "default": false },
+      "generateReports": { "type": "boolean", "description": "Generate PDF Reports", "default": true },
+      "databaseOptimization": { "type": "boolean", "description": "Clean Transients/Post Revisions", "default": true }
+    },
+    "required": ["wpUrl", "username", "appPassword"]
+  }
+}

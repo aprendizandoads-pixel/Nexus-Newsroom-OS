@@ -1,0 +1,15 @@
+{
+  "name": "seo-competitor-spy",
+  "version": "1.0.5",
+  "description": "Analyzes top SERP results for focus keywords and suggests content gaps.",
+  "type": "worker-only",
+  "permissions": ["network:outbound", "read:drafts"],
+  "compatibility": { "core": ">=1.0.0" },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+        "targetRegion": { "type": "string", "enum": ["US", "BR", "UK", "Global"], "default": "Global" },
+        "competitorCount": { "type": "string", "default": "5", "description": "Number of results to analyze" }
+    }
+  }
+}

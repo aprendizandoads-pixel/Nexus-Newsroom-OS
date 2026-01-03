@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus OS Module Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+                    <i data-lucide="hexagon" class="text-white w-5 h-5"></i>
+                </div>
+                <span class="font-bold text-lg text-slate-800 tracking-tight">Nexus Module Marketplace</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="text-sm font-medium text-slate-600 hover:text-indigo-600">Documentation</a>
+                <a href="#" class="text-sm font-medium text-slate-600 hover:text-indigo-600">Submit Module</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="bg-indigo-600 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Extend your Newsroom OS</h1>
+            <p class="text-indigo-100 max-w-2xl mx-auto">Download official and community modules to enhance your signal detection, automate distribution, and monetize content. Install via the <strong>Module Manager</strong>.</p>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex gap-2 overflow-x-auto pb-4">
+            <button class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold whitespace-nowrap">All Modules</button>
+            <button class="px-4 py-2 bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 rounded-full text-sm font-medium whitespace-nowrap">Integrations</button>
+            <button class="px-4 py-2 bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 rounded-full text-sm font-medium whitespace-nowrap">AI & Research</button>
+            <button class="px-4 py-2 bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 rounded-full text-sm font-medium whitespace-nowrap">Social Media</button>
+            <button class="px-4 py-2 bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 rounded-full text-sm font-medium whitespace-nowrap">Analytics</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+            <!-- Card: Nexus Video Studio (New) -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all group relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">NEW</div>
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-purple-50 rounded-lg group-hover:bg-purple-100 transition-colors">
+                        <i data-lucide="video" class="w-6 h-6 text-purple-600"></i>
+                    </div>
+                    <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase rounded border border-emerald-200">Full UI</span>
+                </div>
+                <h3 class="font-bold text-lg text-slate-900">Nexus Video Studio</h3>
+                <p class="text-sm text-slate-500 mt-2 h-10 line-clamp-2">AI Video production suite. Transform articles into short-form videos for TikTok/Reels using Veo or Runway.</p>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="text-xs text-slate-400 font-mono">v1.0.0</div>
+                    <button class="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download .zip
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card: Omni-Channel Broadcaster (New) -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all group relative overflow-hidden">
+                 <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">NEW</div>
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-indigo-50 rounded-lg group-hover:bg-indigo-100 transition-colors">
+                        <i data-lucide="radio" class="w-6 h-6 text-indigo-600"></i>
+                    </div>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded border border-slate-200">Worker</span>
+                </div>
+                <h3 class="font-bold text-lg text-slate-900">Omni-Channel Broadcaster</h3>
+                <p class="text-sm text-slate-500 mt-2 h-10 line-clamp-2">Master distribution node. Publishes content to Instagram, TikTok, Facebook, LinkedIn, and GMB.</p>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="text-xs text-slate-400 font-mono">v1.0.0</div>
+                    <button class="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download .zip
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
+                        <i data-lucide="layout-template" class="w-6 h-6 text-blue-600"></i>
+                    </div>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded border border-slate-200">Worker</span>
+                </div>
+                <h3 class="font-bold text-lg text-slate-900">WordPress Core Integrator</h3>
+                <p class="text-sm text-slate-500 mt-2 h-10 line-clamp-2">Sync drafts, media, and categories directly with your WordPress installation via REST API.</p>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="text-xs text-slate-400 font-mono">v3.0.0</div>
+                    <button class="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download .zip
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-sky-50 rounded-lg group-hover:bg-sky-100 transition-colors">
+                        <i data-lucide="share-2" class="w-6 h-6 text-sky-600"></i>
+                    </div>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded border border-slate-200">Worker</span>
+                </div>
+                <h3 class="font-bold text-lg text-slate-900">Social Syndicator X</h3>
+                <p class="text-sm text-slate-500 mt-2 h-10 line-clamp-2">Automatically convert published articles into threads for X (Twitter) and LinkedIn posts.</p>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="text-xs text-slate-400 font-mono">v1.2.0</div>
+                    <button class="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download .zip
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-emerald-50 rounded-lg group-hover:bg-emerald-100 transition-colors">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-emerald-600"></i>
+                    </div>
+                    <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-bold uppercase rounded border border-purple-200">Declarative</span>
+                </div>
+                <h3 class="font-bold text-lg text-slate-900">Fact-Check Pro</h3>
+                <p class="text-sm text-slate-500 mt-2 h-10 line-clamp-2">AI agent that verifies claims against arXiv and Google Scholar before publication.</p>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="text-xs text-slate-400 font-mono">v0.9.beta</div>
+                    <button class="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download .zip
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-pink-50 rounded-lg group-hover:bg-pink-100 transition-colors">
+                        <i data-lucide="image" class="w-6 h-6 text-pink-600"></i>
+                    </div>
+                    <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase rounded border border-emerald-200">Full UI</span>
+                </div>
+                <h3 class="font-bold text-lg text-slate-900">Image Magic Studio</h3>
+                <p class="text-sm text-slate-500 mt-2 h-10 line-clamp-2">Generate featured images and infographics using Midjourney/DALL-E directly in the CMS.</p>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="text-xs text-slate-400 font-mono">v2.1.0</div>
+                    <button class="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download .zip
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors">
+                        <i data-lucide="search" class="w-6 h-6 text-amber-600"></i>
+                    </div>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded border border-slate-200">Worker</span>
+                </div>
+                <h3 class="font-bold text-lg text-slate-900">SEO Competitor Spy</h3>
+                <p class="text-sm text-slate-500 mt-2 h-10 line-clamp-2">Analyze top SERP competitors for your focus keyword and generate content gap reports.</p>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="text-xs text-slate-400 font-mono">v1.0.5</div>
+                    <button class="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download .zip
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-red-50 rounded-lg group-hover:bg-red-100 transition-colors">
+                        <i data-lucide="bell" class="w-6 h-6 text-red-600"></i>
+                    </div>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded border border-slate-200">Worker</span>
+                </div>
+                <h3 class="font-bold text-lg text-slate-900">Slack Newsroom Bot</h3>
+                <p class="text-sm text-slate-500 mt-2 h-10 line-clamp-2">Get instant alerts in Slack when a "Viral" signal (Score > 80) is detected.</p>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <div class="text-xs text-slate-400 font-mono">v1.0.0</div>
+                    <button class="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download .zip
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="max-w-7xl mx-auto px-6 pb-12">
+        <div class="bg-slate-100 rounded-xl p-8 mt-12 border border-slate-200">
+            <h2 class="text-xl font-bold text-slate-800 mb-4">How to Install</h2>
+            <ol class="list-decimal list-inside space-y-2 text-slate-700">
+                <li>Download the <code>.zip</code> package of the desired module.</li>
+                <li>Navigate to the <strong>Modules & Admin</strong> section in your Nexus OS dashboard.</li>
+                <li>Click the <strong>Upload Package (.zip)</strong> button in the top right.</li>
+                <li>Select the file. The system will verify the signature and manifest.</li>
+                <li>Once installed, click the toggle to activate the module.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

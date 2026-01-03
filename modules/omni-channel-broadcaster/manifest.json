@@ -1,0 +1,20 @@
+{
+  "name": "omni-channel-broadcaster",
+  "version": "1.0.0",
+  "description": "Master distribution node. Publishes content to Instagram, TikTok, Facebook, LinkedIn, and Google My Business.",
+  "type": "worker-only",
+  "permissions": ["read:content", "read:media", "network:outbound"],
+  "compatibility": { "core": ">=1.5.0" },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "instagramToken": { "type": "string", "format": "password", "description": "Instagram Graph API Token" },
+      "facebookPageToken": { "type": "string", "format": "password", "description": "Facebook Page Access Token" },
+      "tiktokAccessToken": { "type": "string", "format": "password", "description": "TikTok Business Access Token" },
+      "linkedinAccessToken": { "type": "string", "format": "password", "description": "LinkedIn OAuth Token" },
+      "gmbLocationId": { "type": "string", "description": "Google Business Profile Location ID" },
+      "publishDelayMinutes": { "type": "number", "default": 5, "description": "Buffer time after main publish" },
+      "autoHashtags": { "type": "boolean", "default": true, "description": "Generate platform-specific hashtags" }
+    }
+  }
+}

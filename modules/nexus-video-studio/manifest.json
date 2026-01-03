@@ -1,0 +1,20 @@
+{
+  "name": "nexus-video-studio",
+  "version": "1.0.0",
+  "description": "AI Video production suite. Transform articles into short-form videos for TikTok/Reels using Veo or Runway.",
+  "type": "full",
+  "permissions": ["read:content", "write:media", "network:outbound"],
+  "compatibility": { "core": ">=1.5.0" },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "provider": { "type": "string", "enum": ["Google Veo", "Runway Gen-2", "OpenAI Sora"], "default": "Google Veo" },
+      "apiKey": { "type": "string", "format": "password", "description": "API Key for the selected provider" },
+      "defaultDuration": { "type": "string", "enum": ["5s", "10s", "30s", "60s"], "default": "10s" },
+      "aspectRatio": { "type": "string", "enum": ["9:16 (Vertical)", "16:9 (Landscape)", "1:1 (Square)"], "default": "9:16 (Vertical)" },
+      "autoGenerateForViral": { "type": "boolean", "default": false, "description": "Auto-generate video if Signal Score > 90" },
+      "includeVoiceover": { "type": "boolean", "default": true, "description": "Generate TTS voiceover track" }
+    },
+    "required": ["apiKey"]
+  }
+}
